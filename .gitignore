@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Dist
+dist/
+dist-ssr/
+
+# IDEs and Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Bun
+# bun.lockb is binary, bun.lock is usually text.
+# Some people like to keep lock files. I'll NOT ignore bun.lock by default if they switched to Bun.
+node_modules
+.env
+.env.local
+.env.*.local
+
+# OS Files
+Thumbs.db
+db.json
+
+# Vite
+vite.config.js.timestamp-*

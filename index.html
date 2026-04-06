@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON STRENGTH | Transform Your Body Today</title>
+    <meta name="description" content="Join Neon Strength - The ultimate high-performance gym for young adults. HIIT, Strength, Cardio, and Yoga in a premium dark-themed environment.">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-dark-bg text-white font-outfit">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-6 border-b border-white/0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-white">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-neon-lime"></div>
+                <span class="text-2xl font-black italic tracking-tighter">NEON<span class="text-neon-lime">STRENGTH</span></span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-10">
+                <a href="#classes" class="text-sm font-bold uppercase tracking-widest hover:text-neon-lime transition-colors">Classes</a>
+                <a href="#trainers" class="text-sm font-bold uppercase tracking-widest hover:text-neon-lime transition-colors">Trainers</a>
+                <a href="#pricing" class="text-sm font-bold uppercase tracking-widest hover:text-neon-lime transition-colors">Membership</a>
+                <a href="#testimonials" class="text-sm font-bold uppercase tracking-widest hover:text-neon-lime transition-colors">Results</a>
+                <a href="#join" class="btn-primary py-3 px-6 text-xs mt-0">Join Now</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-white" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-dark-bg/95 z-40 flex flex-col items-center justify-center gap-8 text-2xl font-black italic uppercase">
+            <button id="close-menu-btn" class="absolute top-6 right-6 p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <a href="#classes" class="mobile-link">Classes</a>
+            <a href="#trainers" class="mobile-link">Trainers</a>
+            <a href="#pricing" class="mobile-link">Membership</a>
+            <a href="#testimonials" class="mobile-link">Results</a>
+            <a href="#join" class="btn-primary">Join Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="/images/hero_bg.png" alt="Gym Background" class="w-full h-full object-cover brightness-[0.4] scale-105 animate-pulse-slow">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <h1 class="text-6xl md:text-9xl font-black italic uppercase leading-none tracking-tighter mb-6 reveal">
+                Transform Your <span class="text-neon-lime">Body</span> Today
+            </h1>
+            <p class="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10 reveal" style="transition-delay: 0.2s;">
+                Break your limits in our state-of-the-art facility designed for those who refuse to be average.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal" style="transition-delay: 0.4s;">
+                <a href="#join" class="btn-primary text-lg px-10 py-5">Start Your Journey</a>
+                <a href="#classes" class="btn-outline text-lg px-10 py-5">Explore Classes</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="section-container">
+        <div class="text-center mb-20 reveal">
+            <h2 class="text-4xl md:text-6xl italic uppercase mb-4 tracking-tighter">Choose Your <span class="text-neon-lime">Battle</span></h2>
+            <p class="text-white/50 uppercase tracking-widest font-bold">Elite Training Programs</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- HIIT -->
+            <div class="group relative h-[500px] overflow-hidden reveal" style="transition-delay: 0.1s;">
+                <div class="absolute inset-0 bg-zinc-900 flex flex-col justify-end p-8 z-10">
+                    <h3 class="text-4xl italic uppercase mb-2">HIIT</h3>
+                    <p class="text-white/50 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">High-intensity intervals to torch fat and boost metabolism.</p>
+                    <div class="w-12 h-1 bg-neon-lime group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="absolute inset-0 z-0 bg-neon-lime opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            </div>
+            <!-- Strength -->
+            <div class="group relative h-[500px] overflow-hidden reveal" style="transition-delay: 0.2s;">
+                <div class="absolute inset-0 bg-zinc-800 flex flex-col justify-end p-8 z-10 text-white shadow-2xl">
+                    <h3 class="text-4xl italic uppercase mb-2">Strength</h3>
+                    <p class="text-white/50 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Heavy lifting and power building for raw muscularity.</p>
+                    <div class="w-12 h-1 bg-neon-lime group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="absolute inset-0 z-0 bg-neon-lime opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            </div>
+            <!-- Cardio -->
+            <div class="group relative h-[500px] overflow-hidden reveal" style="transition-delay: 0.3s;">
+                <div class="absolute inset-0 bg-zinc-900 flex flex-col justify-end p-8 z-10">
+                    <h3 class="text-4xl italic uppercase mb-2">Cardio</h3>
+                    <p class="text-white/50 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Endurance testing sessions to maximize heart health.</p>
+                    <div class="w-12 h-1 bg-neon-lime group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="absolute inset-0 z-0 bg-neon-lime opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            </div>
+            <!-- Yoga -->
+            <div class="group relative h-[500px] overflow-hidden reveal" style="transition-delay: 0.4s;">
+                <div class="absolute inset-0 bg-zinc-800 flex flex-col justify-end p-8 z-10">
+                    <h3 class="text-4xl italic uppercase mb-2">Yoga</h3>
+                    <p class="text-white/50 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Flexibility and recovery to keep your body balanced.</p>
+                    <div class="w-12 h-1 bg-neon-lime group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="absolute inset-0 z-0 bg-neon-lime opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-dark-secondary py-24">
+        <div class="section-container">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl italic uppercase mb-4 tracking-tighter">Your <span class="text-neon-lime">Investment</span></h2>
+                <p class="text-white/50 uppercase tracking-widest font-bold">Transparent Plans for Real Results</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic -->
+                <div class="card-gradient p-10 flex flex-col reveal" style="transition-delay: 0.1s;">
+                    <h3 class="text-2xl uppercase italic mb-2">Basic</h3>
+                    <div class="flex items-baseline gap-1 mb-8">
+                        <span class="text-4xl font-black">$49</span>
+                        <span class="text-white/50 text-sm">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow text-white/70">
+                        <li>Standard Gym Access</li>
+                        <li>Locker Room Access</li>
+                        <li>Basic Workout Plan</li>
+                        <li class="opacity-30 line-through">Personal Trainer</li>
+                        <li class="opacity-30 line-through">Unlimited Classes</li>
+                    </ul>
+                    <a href="#" class="btn-outline text-center py-4 text-xs">Choose Plan</a>
+                </div>
+
+                <!-- Pro (Featured) -->
+                <div class="card-gradient border-neon-lime/40 p-10 flex flex-col relative reveal" style="transition-delay: 0.2s;">
+                    <div class="absolute -top-4 right-8 bg-neon-lime text-black px-3 py-1 text-xs font-black uppercase tracking-tighter italic">Most Popular</div>
+                    <h3 class="text-2xl uppercase italic mb-2">Pro</h3>
+                    <div class="flex items-baseline gap-1 mb-8">
+                        <span class="text-4xl font-black text-neon-lime">$79</span>
+                        <span class="text-white/50 text-sm">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li>24/7 Premium Access</li>
+                        <li>All Standard Classes</li>
+                        <li>Advanced Training Plan</li>
+                        <li>Monthly Progress Review</li>
+                        <li class="opacity-30 line-through">1-on-1 Sessions</li>
+                    </ul>
+                    <a href="#" class="btn-primary text-center py-4 text-xs font-black">Choose Plan</a>
+                </div>
+
+                <!-- Elite -->
+                <div class="card-gradient p-10 flex flex-col reveal" style="transition-delay: 0.3s;">
+                    <h3 class="text-2xl uppercase italic mb-2">Elite</h3>
+                    <div class="flex items-baseline gap-1 mb-8">
+                        <span class="text-4xl font-black">$149</span>
+                        <span class="text-white/50 text-sm">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow text-white/70">
+                        <li>All Pro Features</li>
+                        <li>Unlimited 1-on-1 Training</li>
+                        <li>Custom Diet Planning</li>
+                        <li>Private Locker & Spa</li>
+                        <li>Guest Passes Included</li>
+                    </ul>
+                    <a href="#" class="btn-outline text-center py-4 text-xs">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="section-container">
+        <div class="text-center mb-20 reveal">
+            <h2 class="text-4xl md:text-6xl italic uppercase mb-4 tracking-tighter">Elite <span class="text-neon-lime">Mentors</span></h2>
+            <p class="text-white/50 uppercase tracking-widest font-bold">Learn from the Absolute Best</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Trainer 1 -->
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start reveal" style="transition-delay: 0.1s;">
+                <div class="w-full md:w-64 h-80 flex-shrink-0 bg-dark-secondary relative group overflow-hidden">
+                    <img src="/images/trainer_1.png" alt="Trainer 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 border-[10px] border-neon-lime/0 group-hover:border-neon-lime/20 transition-all duration-500"></div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl italic uppercase mb-1">Marcus "Iron" Vant</h3>
+                    <p class="text-neon-lime font-bold uppercase tracking-widest text-xs mb-4">Bodybuilding specialist</p>
+                    <p class="text-white/60 text-sm max-w-sm mb-6">"Pain is just fuel. If you don't break the limits today, you won't reach them tomorrow."</p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="#" class="text-white/40 hover:text-white transition-colors">IG</a>
+                        <a href="#" class="text-white/40 hover:text-white transition-colors">TW</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer 2 -->
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start reveal" style="transition-delay: 0.2s;">
+                 <div class="w-full md:w-64 h-80 flex-shrink-0 bg-dark-secondary relative group overflow-hidden">
+                    <img src="/images/trainer_2.png" alt="Trainer 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <div class="absolute inset-0 border-[10px] border-neon-lime/0 group-hover:border-neon-lime/20 transition-all duration-500"></div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl italic uppercase mb-1">Sarah "Zen" Chen</h3>
+                    <p class="text-neon-lime font-bold uppercase tracking-widest text-xs mb-4">Yoga & Mobilty Expert</p>
+                    <p class="text-white/60 text-sm max-w-sm mb-6">"Strength starts in the mind. Flow with the struggle to find your true power."</p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="#" class="text-white/40 hover:text-white transition-colors">IG</a>
+                        <a href="#" class="text-white/40 hover:text-white transition-colors">TW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Results) -->
+    <section id="testimonials" class="bg-dark-secondary py-24 overflow-hidden">
+        <div class="section-container">
+             <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl italic uppercase mb-4 tracking-tighter">Real <span class="text-neon-lime">Results</span></h2>
+                <p class="text-white/50 uppercase tracking-widest font-bold">Proof of Performance</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-dark-bg p-8 md:p-16 border border-white/5 reveal">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="w-full md:w-1/2 aspect-square bg-dark-accent overflow-hidden">
+                        <img src="/images/transformation.png" alt="Before and After" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex gap-1 mb-4">
+                            <span class="text-neon-lime">★★★★★</span>
+                        </div>
+                        <p class="text-xl italic mb-8">"I've been to many gyms, but Neon Strength is different. The atmosphere, the trainers, and the community pushed me to achieve results I never thought possible in just 6 months."</p>
+                        <div>
+                            <p class="font-black italic uppercase text-lg">Alex Johnson</p>
+                            <p class="text-white/40 uppercase tracking-widest text-xs">-15kg / +10kg Muscle Mass</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 mb-8">
+                    <div class="w-6 h-6 bg-neon-lime"></div>
+                    <span class="text-xl font-black italic tracking-tighter">NEON<span class="text-neon-lime">STRENGTH</span></span>
+                </div>
+                <p class="text-white/40 max-w-sm mb-8">The standard for elite fitness performance. Dark theme, aggressive results, zero excuses.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-white/60 hover:text-neon-lime transition-colors">Instagram</a>
+                    <a href="#" class="text-white/60 hover:text-neon-lime transition-colors">Discord</a>
+                    <a href="#" class="text-white/60 hover:text-neon-lime transition-colors">Spotify</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-white/40 text-sm">
+                    <li><a href="#classes" class="hover:text-white transition-colors">Classes</a></li>
+                    <li><a href="#trainers" class="hover:text-white transition-colors">Our Trainers</a></li>
+                    <li><a href="#pricing" class="hover:text-white transition-colors">Membership</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold uppercase tracking-widest text-sm mb-6">Newsletter</h4>
+                <p class="text-white/40 text-sm mb-4">Get training tips and exclusive offers.</p>
+                <div class="flex">
+                    <input type="email" placeholder="email@example.com" class="bg-white/5 border-none px-4 py-3 text-sm focus:ring-1 focus:ring-neon-lime w-full">
+                    <button class="bg-neon-lime text-black px-4 py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 pt-8 border-t border-white/5 text-center text-white/20 text-xs uppercase tracking-[0.2em]">
+            © 2026 NEON STRENGTH PERFORMANCE CENTER. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
